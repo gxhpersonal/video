@@ -1,0 +1,7 @@
+.vjs-subtitles-button,.vjs-captions-button{
+	display: none;
+}
+.vjs-volume-menu-button .vjs-menu{
+    display: block;
+    opacity: 1;
+}
