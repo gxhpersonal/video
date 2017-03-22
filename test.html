@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>android or ios</title>
+</head>
+<body>
+	<style>
+		#btn{
+			width: 200px;
+			height: 100px;
+			border:1px solid #23e34c;
+			text-align: center;
+			line-height: 100px;
+			border-radius: 5px;
+		}
+	</style>
+	<div id="btn">点击测试浏览器环境</div>
+
+	<script>
+		var btn = document.getElementById('btn');
+		btn.onclick = function(){
+			alert(111)
+		}
+
+		var u = navigator.userAgent;
+        var isAndroid = u.indexOf('Android') > -1 || u.indexOf('Adr') > -1; //android终端
+        var isiOS = !!u.match(/\(i[^;]+;( U;)? CPU.+Mac OS X/); //ios终端
+        alert('是否是Android：'+isAndroid);
+        alert('是否是iOS：'+isiOS);
+</script>
+</body>
+</html>
